@@ -1,0 +1,31 @@
+{
+  "_comment": "Site identity, read by src/build_site.py. base_url is the FINAL public URL (pharmeasy.in subpath behind the edge reverse proxy, same as fever-watch). The production workflow overrides base_url from the KYV_PROD_BASE_URL secret and sheets_webhook_url from the SHEETS_WEBHOOK_URL secret. Keep in-page asset paths relative.",
+
+  "base_url": "https://pharmeasy.in/know-your-vaccine/",
+  "staging_url": "https://pharmeasymarketing.github.io/know-your-vaccine/",
+  "site_name": "Know Your Vaccine",
+  "brand": "PharmEasy",
+  "slug": "know-your-vaccine",
+  "src_param": "knowyourvaccine",
+
+  "title": "Know Your Vaccine | Find the Vaccines You Need in 1 Minute | PharmEasy",
+  "description": "Answer 2 quick questions about age and health and get a personalised vaccine plan for you or your family, with at-home vaccination by PharmEasy.",
+
+  "locale": "en_IN",
+  "language": "en-IN",
+  "theme_color": "#10847E",
+  "gtm_id": "GTM-W5PR55Z",
+
+  "sheets_webhook_url": "",
+  "sheets_key": "",
+  "allow_skip_contact": false,
+
+  "publisher": {
+    "name": "PharmEasy",
+    "legal_name": "API Holdings Limited",
+    "url": "https://pharmeasy.in",
+    "logo": "https://pharmeasy.in/blog/wp-content/themes/Pharmeasy/assets/img/pe_logo.svg"
+  },
+
+  "is_production": false
+}

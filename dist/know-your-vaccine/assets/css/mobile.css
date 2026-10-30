@@ -1,0 +1,40 @@
+/* Mweb layout (max-width 819px or coarse pointer). Nav block copied from fever-watch mobile.css. */
+  body { background: var(--pe-bg); }
+
+  .fw-nav { position: relative; background: var(--pe-green); z-index: 40; }
+  .navin { height: 56px; display: flex; align-items: center; padding: 0 16px; }
+  .navin img.pe-mark { height: 20px; width: auto; display: block; }
+  .pe-rule { width: 1px; height: 16px; background: rgba(255,255,255,.45); flex-shrink: 0; }
+  .fw-word { color: #fff; font-family: var(--font); font-size: 15px; font-weight: 600; letter-spacing: .2px; line-height: 1; white-space: nowrap; }
+  .pe-burger { width: 40px; height: 40px; border: none; background: transparent; color: #fff; font-size: 22px; line-height: 1; cursor: pointer; display: grid; place-items: center; padding: 0; }
+  .pe-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; height: 28px; pointer-events: none; cursor: default; }
+
+  /* PharmEasy hamburger menu (nav structure + links ported from Mosquito Watch) */
+  .pe-topnav { display: none; position: fixed; top: 56px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 2px; background: var(--pe-green-dark); padding: 8px; box-shadow: 0 12px 22px rgba(0,0,0,.24); z-index: 50; max-height: calc(100vh - 56px); overflow-y: auto; }
+  .pe-topnav.open { display: flex; }
+  .pe-nav-item { position: static; }
+  .pe-nav-btn, .pe-nav-link { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 5px; background: none; border: 0; color: #fff; font-family: var(--font); font-size: 15px; font-weight: 600; cursor: pointer; padding: 12px; border-radius: 8px; text-decoration: none; }
+  .pe-nav-btn:hover, .pe-nav-link:hover, .pe-nav-item.open .pe-nav-btn { background: rgba(255,255,255,.12); }
+  .pe-caret { font-size: 9px; transition: transform .15s; }
+  .pe-nav-item.open .pe-caret { transform: rotate(180deg); }
+  .pe-nav-drop { display: none; background: rgba(255,255,255,.06); border-radius: 8px; margin: 2px 0 4px; padding: 4px 4px 4px 10px; }
+  .pe-nav-item.open .pe-nav-drop { display: block; }
+  .pe-nav-drop a { display: block; padding: 11px 12px; color: #eafffb; font-size: 14px; font-weight: 500; text-decoration: none; border-radius: 7px; }
+  .pe-nav-drop a:hover { background: rgba(255,255,255,.12); color: #fff; }
+
+  .kyv-stage { padding: 18px 16px 28px; }
+  .kyv-app { min-height: 460px; }
+  .kyv-banner-title { font-size: 28px; }
+  .kyv-chip { font-size: 14.5px; }
+  .kyv-chips[data-group="flags"] .kyv-chip { font-size: 14px; }
+
+  .kyv-wrap { padding: 28px 16px; }
+  .kyv-alt { background: #fff; border-top: 1px solid var(--pe-line); border-bottom: 1px solid var(--pe-line); }
+  .kyv-two > * + * { margin-top: 28px; }
+  .kyv-doc .kyv-btn { width: 100%; }
+
+  .footer { padding-bottom: 76px; }
+  .footbarin { padding: 18px 16px 24px; }
+
+  .kyv-sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 35; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: #fff; box-shadow: 0 -6px 18px rgba(0,0,0,.08); transform: translateY(110%); transition: transform .22s ease; }
+  .kyv-sticky.is-show { transform: none; }

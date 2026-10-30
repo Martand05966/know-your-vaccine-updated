@@ -1,0 +1,145 @@
+{
+  "_comment": "ALL page copy and vaccine data lives here. build_site.py bakes it into the HTML (window.KYV). To change content, edit this file only. House rule from fever-watch: no em dashes, en dashes or middots in copy - use an ASCII hyphen.",
+
+  "ai_badge": "AI vaccine planner",
+
+  "intro": {
+    "banner_title": "Vaccines are for adults too",
+    "banner_sub": "But which ones? Let our AI find out.",
+    "lede": "Answer 3 quick questions and get your vaccine plan in 1 minute.",
+    "cta": "Show my vaccines",
+    "ticks": ["No login", "Instant results", "Free"]
+  },
+
+  "reviewer": {
+    "_note": "Leave names empty to hide the byline. Fill in once medical review is done.",
+    "names": [],
+    "url": "https://pharmeasy.in/legal/editorial-policy"
+  },
+
+  "steps": {
+    "about": { "title": "About you", "age_label": "Age", "gender_label": "Gender" },
+    "health": { "title": "Any of these apply?", "hint": "Pick all that fit." },
+    "contact": {
+      "title": "Almost there",
+      "hint": "Enter your details to unlock your AI vaccine plan.",
+      "cta": "Show my vaccines",
+      "consent": "I agree to be contacted by PharmEasy about my vaccine plan on call, SMS and WhatsApp."
+    }
+  },
+
+  "loading": {
+    "title": "Building your plan",
+    "lines": ["Checking schedules for your age", "Matching your health answers", "Picking the right vaccines"]
+  },
+
+  "results": {
+    "eyebrow": "Your AI-personalised plan",
+    "title": "here's what we recommend",
+    "sub": "Based on your age, gender and health answers.",
+    "why_label": "Why you need it",
+    "schedule_label": "Your schedule",
+    "options_label": "Available options",
+    "book": "Book at home",
+    "notify": "Notify Me",
+    "notified": "We will notify you",
+    "buy": "Book now",
+    "callback_title": "Prefer to talk to someone first?",
+    "callback_body": "Our health expert can help you plan your doses.",
+    "callback_cta": "Request a callback",
+    "callback_done": "Done. Our expert will call you shortly.",
+    "doctor_cta": "Talk to a doctor",
+    "feedback_title": "Was this helpful?",
+    "feedback_done": "Thanks for the feedback!",
+    "family": "Check for a family member",
+    "restart": "Start over"
+  },
+
+  "ages": [
+    { "id": "minor", "label": "Under 18" },
+    { "id": "young", "label": "18-26" },
+    { "id": "adult", "label": "27-49" },
+    { "id": "mid", "label": "50-64" },
+    { "id": "senior", "label": "65+" }
+  ],
+
+  "adult_only": {
+    "_note": "PharmEasy vaccinates adults only. Any age id listed in minor_ages shows the not-eligible screen instead of the plan.",
+    "minor_ages": ["minor"],
+    "title": "Vaccination on PharmEasy is for adults (18+)",
+    "body": "For children's vaccines, please speak to your paediatrician.",
+    "cta": "Check for an adult instead",
+    "edit": "Change answers"
+  },
+
+  "genders": [
+    { "id": "male", "label": "Male" },
+    { "id": "female", "label": "Female" },
+    { "id": "other", "label": "Other" }
+  ],
+
+  "flags": [
+    { "id": "pregnant", "label": "Pregnant", "show": "female_18_49" },
+    { "id": "diabetes", "label": "Diabetes" },
+    { "id": "heartlung", "label": "Heart or lung disease" },
+    { "id": "immuno", "label": "Weak immunity" },
+    { "id": "travel", "label": "Travel or hostel" },
+    { "id": "outside_food", "label": "Eat out often" },
+    { "id": "none", "label": "None of these" }
+  ],
+
+  "_options_note": "Brand option links open PharmEasy search for that brand. Swap in direct product URLs once confirmed in stock. An option with a product block renders as a product card: in_stock false shows a Notify Me button (logged to the sheet), true shows Book now.",
+  "vaccines": [
+    { "id": "flu", "name": "Influenza (Flu) Vaccine", "price": 1597, "url": "https://pharmeasy.in/content/influenza2", "icon": "lungs",
+      "doses": "1 dose every year",
+      "options": [
+        { "name": "Influvac Tetra" }, { "name": "Vaxiflu-4" }, { "name": "Fluarix Tetra" }] },
+    { "id": "hpv", "name": "HPV Vaccine", "price": 3416, "url": "https://pharmeasy.in/content/hpv", "icon": "ribbon",
+      "doses": "2-3 doses over 6 months",
+      "options": [{ "name": "Gardasil 9" }, { "name": "Cervavac" }] },
+    { "id": "pneumo", "name": "Pneumococcal Vaccine", "price": 1961, "url": "https://pharmeasy.in/content/pneumo", "icon": "shield",
+      "doses": "Usually a single dose",
+      "options": [{ "name": "Prevenar 20" }, { "name": "Prevenar 13" }, { "name": "Pneumovax 23" }] },
+    { "id": "typhoid", "name": "Typhoid Vaccine", "price": 1977, "url": "https://pharmeasy.in/content/typhoid", "icon": "drop",
+      "doses": "1 dose, booster as advised",
+      "options": [{ "name": "Typbar TCV" }, { "name": "Typhim Vi" }] },
+    { "id": "hepa", "name": "Hepatitis A Vaccine", "price": 1903, "url": "https://pharmeasy.in/content/hepatitis", "icon": "liver",
+      "doses": "2 doses, 6-12 months apart",
+      "options": [{ "name": "Havrix" }, { "name": "Avaxim 80" }] },
+    { "id": "shingles", "name": "Shingles Vaccine", "price": 9569, "url": "https://pharmeasy.in/content/shingles", "icon": "zap",
+      "doses": "2 doses, 2-6 months apart",
+      "options": [{ "name": "Shingrix" }] },
+    { "id": "mening", "name": "Meningitis Vaccine", "price": 4674, "url": "https://pharmeasy.in/online-medicine-order/menactra-vaccine-inj-4603", "icon": "brain",
+      "doses": "1 dose, booster as advised",
+      "options": [{ "name": "Menactra", "url": "https://pharmeasy.in/online-medicine-order/menactra-vaccine-inj-4603" }] }
+  ],
+
+  "why": {
+    "title": "Vaccines are not just for babies",
+    "body": "Protection from childhood shots can fade, some vaccines are needed every year, and new risks appear with age and health conditions.",
+    "points": [
+      { "t": "Prevention beats treatment", "d": "A timely vaccine stops an illness before it starts, saving lost days and medical bills." },
+      { "t": "You protect your family too", "d": "Vaccinated adults are far less likely to pass infections to children and elders at home." },
+      { "t": "Safe and doctor-backed", "d": "Government-approved vaccines, an unbroken cold chain and trained professionals at your door." }
+    ]
+  },
+
+  "guarantee": ["100% genuine vaccines in a cold-chain box", "FREE vaccine administration at home", "24/7 doctor support"],
+
+  "doctor": {
+    "title": "Want a doctor to confirm?",
+    "body": "Our doctors will check your history and suggest the right vaccines and schedule.",
+    "cta": "Talk to a doctor",
+    "url": "https://pharmeasy.in/doctor-consultation/landing?src=knowyourvaccine"
+  },
+
+  "faq": [
+    { "q": "Is this check a medical diagnosis?", "a": "No. It is an indicative guide based on commonly followed vaccine schedules for your age and health. Please confirm with a doctor before vaccination, especially if you are pregnant or have a medical condition." },
+    { "q": "Why do adults need vaccines?", "a": "Protection from some childhood vaccines fades over time, some vaccines like flu are needed every year, and risks such as pneumonia and shingles rise with age and chronic illness." },
+    { "q": "How does at-home vaccination work?", "a": "Book the vaccine on PharmEasy. It reaches you in a cold-chain box and a trained professional gives it at home. Vaccine administration is free." },
+    { "q": "Can I take more than one vaccine on the same day?", "a": "Many vaccines can be given together, but it depends on the vaccines and your health. Our doctors can help you plan the schedule." },
+    { "q": "What happens to my answers?", "a": "Your answers are used only to prepare your vaccine plan and to help our team reach you about it. We do not share them with advertisers." }
+  ],
+
+  "disclaimer": "This tool gives general information based on standard vaccination schedules and is not a substitute for medical advice. Always consult a qualified doctor before taking any vaccine. Prices are current PharmEasy starting rates and may change."
+}
